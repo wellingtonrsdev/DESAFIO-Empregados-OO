@@ -50,8 +50,14 @@ public class Program {
 	}
 
 	private static void showReport(Department dept) {
-		System.out.print(dept);
-		System.out.println(dept.getAddress().getEmail());
+		System.out.println("FOLHA DE PAGAMENTO:");
+		System.out.printf("Departamento " + dept.getName() + " = R$ %.2f%n", dept.payroll());
+		System.out.println("Pagamento realizado no dia " + dept.getPayDay());
+		System.out.println("Funcionários:");
+		for (Employee emp : dept.getEmployees()) {
+			System.out.println(emp.getName());
+		}
+		System.out.println("Para dúvidas favor entrar em contato: " + dept.getAddress().getEmail());
 	}
 
 }

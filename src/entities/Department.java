@@ -64,22 +64,4 @@ public class Department {
 		return sum;
 	}
 
-	public String toString() {
-		StringBuilder sb = new StringBuilder();
-		sb.append("FOLHA DE PAGAMENTO:" + "\n");
-		sb.append("Departamento Vendas = R$ ");
-		sb.append(String.format("%.2f", payroll()) + "\n");
-		sb.append("Pagamento realizado no dia ");
-		sb.append(payDay + "\n");
-		sb.append("Funcionários:" + "\n");
-
-		for (Employee emp : employees) {
-			sb.append(emp.getName() + "\n");
-		}
-
-		sb.append("Para dúvidas favor entrar em contato: ");
-
-		return sb.toString();
-	}
-
 }
