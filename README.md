@@ -1,4 +1,4 @@
-<h1>DESAFIO: Empregados OO</h1>
+<h1 align="center">DESAFIO: Empregados OO</h1>
 
 Para calcular o imposto de renda que uma pessoa deve pagar, um país aplica as seguintes regras:
 1. Você deve fazer um programa para ler os dados de um departamento, que inclui seu endereço e seus
